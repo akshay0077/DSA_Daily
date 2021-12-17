@@ -1,10 +1,3 @@
-//(1) You can think O(n^2) with O(1) space solution
-
-//(2) C++ program to print largest contiguous array sum
-
-//Time : O(N)
-//space :O(1)
-
 #include <iostream>
 using namespace std;
 

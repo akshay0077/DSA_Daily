@@ -51,7 +51,8 @@ int main() {
 	raj.num = 79; 
 	raj.doub = 91.0; 
 
-	node raj = new node("striver", 79, 91.0, ""); 
+	//right way to degining
+	node raj =node("striver", 79, 91.0, ""); 
 
 
 	{arr[], int, double}; 
@@ -74,9 +75,6 @@ int main() {
 	array<int, 5> arr; 
 	arr.fill(10); -> /// {10, 10, 10, 10, 10} 
 
-
-	arr.at(index); 
-
 	for(int i = 0;i<5;i++) {
 		cout << arr.at(i) << " "; 
 	}
@@ -88,17 +86,17 @@ int main() {
 	// 
 
 	array<int, 5> arr = {1, 3, 4, 5, 6}; 
-	for(auto it: arr.begin(); it!=arr.end();it++) {
+	for(auto it= arr.begin(); it!=arr.end();it++) {
 		cout << *it << " "; 
 	}
 
 
 
-	for(auto it: arr.rbegin(); it>arr.rend();it++) {
+	for(auto it= arr.rbegin(); it>arr.rend();it++) {
 		cout << *it << " "; 
 	}
 
-	for(auto it: arr.end() - 1; it>=arr.begin();it--) {
+	for(auto it= arr.end() - 1; it>=arr.begin();it--) {
 		cout << *it << " "; 
 	}
 
@@ -223,5 +221,4 @@ int main() {
 
 	// 10 x 20 x 30 // int arr[10][20][30] 
 	vector<vector<vector<int>>> vec(10, vector<vector<int>> vec(20, vector<int> (30, 0));)
-
 }

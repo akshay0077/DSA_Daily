@@ -1,4 +1,4 @@
-
+	
 	// 2nd day 
 
 	// arrays vectors struct 
@@ -27,7 +27,6 @@
 	st.erase(st.begin()); // st.erase(iterator) // st -> {2, 5}
 
 	// log n 
-	// 77777777777
 	st.erase(st.begin(), st.begin() + 2); // -> [)
 	// st.erase(startIterator, endIterator) 
 
@@ -41,6 +40,7 @@
 	auto it = st.find(9); // it = st.end(); 
 
 	st.emplace(6); // st.insert(6) 
+	//emplace is faster then insert
 
 	cout << st.size() << endl; 
 
@@ -67,6 +67,8 @@
 	st.insert(2); 
 	st.insert(3);
 	st.insert(1); 
+	st.inser(3);
+	
 
 	// average time complexity is O(1) 
 	// tle -> switch to set 
@@ -181,7 +183,7 @@
 	// top 
 	// size 
 	// empty 
-	// push and emplace 
+	// push and emplace are same 
 
 	st.push(2); 
 	st.push(4); 
@@ -189,11 +191,11 @@
 	st.push(1); 
 
 
-	cout << st.top() // prints 2 
+	cout << st.top() // prints 1
 	st.pop(); // deletes the last entered element 
 	cout << st.top(); // prints 3 
 	st.pop(); 
-	cout << st.top(); 
+	cout << st.top(); //print
 
 	bool flag = st.empty(); // returns true if stack is empty, or false
 
