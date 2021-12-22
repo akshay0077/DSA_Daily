@@ -52,10 +52,10 @@ int main()
 
 	sort012(arr, n);
 
-	cout << "array after segregation ";
+	cout << "array after segregation :[";
 
 	printArray(arr, n);
-
+	cout<<"]"<<endl;
 	return 0;
 }
 

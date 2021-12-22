@@ -25,13 +25,11 @@ int maxSubArraySum(int arr[],int n){
 	int CurrSum=0;
 
 	for(int i=0; i<n; i++){
-		// CurrSum+=arr[i];
-		// if(CurrSum > MaxSum)
-		// 	MaxSum=CurrSum;
-		// if(CurrSum < 0)
-		// 	CurrSum=0;
 		CurrSum+=arr[i];
-		MaxSum=max(MaxSum,CurrSum);
+		if(CurrSum > MaxSum)
+			MaxSum=CurrSum;
+		if(CurrSum < 0)
+			CurrSum=0;
 	}
 	return MaxSum;
 }

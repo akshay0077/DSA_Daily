@@ -9,7 +9,7 @@ Output: 1
 
 
 constraints:
-0 <= s.length <= 5 * 104
+0 <= s.length <= 5 * 10^4
 
 ------------------------------
 class Solution {

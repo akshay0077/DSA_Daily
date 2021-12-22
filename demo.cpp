@@ -1,19 +1,12 @@
-#include <iostream>
-#include <map>
+(1) To Check Actual Ram on Laptop
+ -> grep MemTotal /proc/meminfo
 
-using namespace std;
+ (2) To Check a Maximum Ram Size in Over laptop
+ -> sudo dmidecode -t 16
 
-int main(){
-	map<string, int> mpp; 
-	mpp["raj"] = 27; 
-	mpp["hima"] = 31; 
-	mpp["praveer"] = 31;
-	mpp["sandeep"] = 67; 
-	mpp["tank"] = 89; 
-	mpp["raj"] = 29; 
+ (3) To Check Type (DDR4)/Speed 
+ -> sudo dmidecode -t 17
 
-	for(auto it:mpp){
-		cout<<it.first<<it.second<<" ";
-	}cout<<endl;
-	return 0;
-}
+ (4) To check Ram capacity 
+ -> sudo dmidecode -t memory | grep -Po '^\tMaximum Capacity: \K.*'
+

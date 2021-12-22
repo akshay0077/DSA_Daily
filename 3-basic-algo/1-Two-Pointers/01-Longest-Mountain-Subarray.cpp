@@ -1,3 +1,5 @@
+Brute Force (Time Limit Exceed)
+
 /*
     Time Complexity: O(N * N * N)
     Space Complexity: O(1)
@@ -52,7 +54,7 @@ int longestMountain(int *arr, int n)
 }
 
 
-(2)
+(2) Optimal Solution (Two Pointers)
 
 /*
     Time Complexity: O(N)
